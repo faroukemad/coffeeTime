@@ -1,0 +1,224 @@
+@import "@fontsource/league-spartan";
+@import '../global/global.scss';
+
+
+.intro{
+       
+        height: 600px;
+        @include mob{
+            height: auto;
+            }
+       .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+        flex-direction: column;
+        overflow: hidden;
+       }
+    .wrap{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        height: 350px;
+        overflow: hidden;
+        @include mob{
+           flex-direction: column;
+           height: 400px;
+           }
+
+        .left{
+            flex:5;
+            width: 100%;
+            overflow: hidden;
+            @include mob{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: auto;  
+                         }
+            .leftImage{
+                width: 550px;
+                height: 350px;
+                margin-left: 200px;
+                display:flex;
+                overflow: hidden;
+                animation: drop-right 3s ease 200ms backwards;
+                transition: all 2s ease;
+                @include mob{
+                    margin-left: 10px;
+                    width: 200px;
+                    height: 200px;
+                   }
+                   @include range{
+                    margin-left: 0;
+                }
+            }
+               
+            @keyframes drop-right {
+                from {
+                 opacity: 0;
+                 transform: translatex(-200px);
+                }
+                to {
+                 opacity: 1;
+                 transform: translate(0px);
+                }
+               }
+            
+            img{
+                object-fit: contain;
+                width: 100%;
+                height: 97%;
+                overflow: hidden;
+
+            }
+        }
+
+        @keyframes drop-left {
+            from {
+             opacity: 0;
+             transform: translatex(200px);
+            }
+            to {
+             opacity: 1;
+             transform: translate(0px);
+            }
+           }
+        .right{
+            flex:5;
+            overflow: hidden;
+            @include mob{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction:column;
+                flex:auto;
+                margin-bottom: 20px;
+                           }
+            .coffeetime{
+                width:400px;
+                margin-left: 50px;
+                overflow: hidden;
+                animation: drop-left 3s ease 200ms backwards;
+                @include mob{
+                }
+                h1{
+                    padding: 5px;
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                    transition: all 2s ease;
+
+                    @include mob{
+                        font-size: 35px;
+                        margin-left: 45px;
+                        margin-bottom: 0;
+                       }
+                    span{
+                        margin-left: 145px;
+                        @include mob{
+                           margin-left: 90px;
+                           }
+                    }
+                }
+                p{
+                    padding: 5px;
+                    letter-spacing: 2px;
+                    line-height: 20px;
+                    color:black;
+                    transition: all 2s ease;
+
+                    @include mob{
+                        width: 300px;
+                        font-stretch: expanded;
+                          text-align:justify;
+                          line-height: 15px;   
+                          margin-bottom: 50px; 
+                          margin-left: 30px;
+                       }
+                }
+            }
+        }
+          
+    }
+        
+      
+
+        .btnClass{
+            display: flex;
+            overflow: hidden;
+
+
+        .btn{
+            overflow:hidden;
+            color:black;
+            margin-top: 30px;
+margin-bottom: 15px;
+            margin-left: 170px;
+            border: none;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           // background-image: linear-gradient(to left ,rgb(97, 64, 20) , rgb(143, 96, 34));
+            background-color: #6f4e37;
+         border-radius: 10px;
+            transition: all .7s ease-in-out;
+            font-size:20px;
+            @include mob{
+                margin-left: 10px;  
+                margin-top: 20px;
+                  }
+            .arrow{
+                color:black;
+                margin-left: 7px;
+                margin-bottom: 4px;
+                font-size: 23px;
+            
+            }
+            }
+          }}
+
+         
+        
+       
+     
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+  .btn {
+    animation: drop-up 3s ease 200ms backwards;
+   }
+   
+@keyframes drop-up {
+    from {
+     opacity: 0;
+     transform: translateY(200px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+
+   
+   .icon3{
+    cursor: pointer;
+    &:hover{
+        fill: darkred;
+    }
+}
+
+.icon4{
+    cursor: pointer;
+    &:hover{
+        fill: darkgreen;
+    } 
+}
+

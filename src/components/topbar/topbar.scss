@@ -1,0 +1,151 @@
+
+@import '../global/global.scss';
+
+.topbar{
+
+    width: 100%;
+    height: 140px;
+    color: white;
+    transition: all 1s ease;
+    @include mob{
+      height: 100px;
+      overflow: hidden;
+      
+
+    }
+   
+    
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+        @include mob{
+          justify-content:center;
+          overflow: hidden;
+          justify-content: space-around;
+          
+        }
+
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mob{
+              overflow: hidden;
+
+
+            }
+            
+
+            .leftComp{
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+
+
+                @include mob{
+                 height: 90px;
+                 width: 90px;
+
+                }
+
+             
+                img{
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                    transition: all .7s ease-in-out;
+                    cursor: pointer;
+                }
+            }
+        }
+        .right{
+          display: flex;
+          right: 10px;
+          @include mob{
+
+          }
+            .rightComp{
+                margin-top: 10px;
+                overflow: hidden; 
+                transition: all .7s ease-in-out;
+ 
+                @include mob{
+                  flex-direction: column;
+                  justify-content: space-evenly;
+                  height: 140px;
+                  width: 280px;
+                  margin-top: 20px;
+                  overflow: hidden;
+                }
+
+                .color{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-bottom: 5px;
+
+                    
+
+                
+                    
+                }
+
+            .elementDiv{
+                   cursor: pointer;
+                   width: 25px;
+                   height: 25px;
+                  fill:burlywood;
+              
+               }
+                
+            }
+        }
+    
+    
+    }
+}
+
+.element{
+    position: relative;
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    cursor:pointer;
+    @include mob{
+      padding-bottom: 0;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    
+  }
+ 
+  .element:hover {
+    color:white;
+    
+  }
+  
+  .element::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: lightblue;
+    margin-top: 10px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .element:hover::before {
+    transform: scaleX(1);
+  }
+
+
+

@@ -1,0 +1,270 @@
+@import '../global/global.scss';
+
+.projects{
+
+    height: 2000px;
+	border-top-right-radius:100px ;
+	border-top-left-radius:100px ;
+
+	background-color:#f3f3f3;
+	@include mob{
+		height: auto;
+		overflow: hidden;
+
+	}
+
+	
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+		
+		//background-image: url('../../../public/assests/coffee.png');
+		
+        .text{
+			height: 200px;
+            margin-bottom: 50px;
+            margin-top: 70px;
+            color: #1c1d25;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+            h1{
+                color: #1c1d25;
+                font-weight: bold;
+				font-size: 60px;
+				padding: 10px;
+				@include mob{
+					font-size: 40px;
+				}
+				span{
+					color:burlywood;
+					@include mob{
+						font-size: 40px;
+					}
+				}
+				
+            }
+			h2{
+				margin-top: 30px;
+				color: darkgray;
+                font-weight: bold;
+                font-size: 25px;
+			}
+        }
+
+        .images{
+            display: flex;
+            flex-direction: column;
+               justify-content: center;
+               align-items: center;
+            .image1{
+                height: 500px;
+                width: 1200px;
+                overflow: hidden;
+				@include mob2{
+					width: 300px;
+					height: 200px;
+				}
+				
+                img{
+                    width: 100%;
+                    height: 100%;
+
+					@include mob{
+						
+					}
+                }
+            }
+			.image2{
+                height: 500px;
+                width: 900px;
+                overflow: hidden;
+				@include mob2{
+					width: 300px;
+					height: 200px;
+				}
+				img{
+                    width: 100%;
+                    height: 100%;
+
+					@include mob{
+						
+					}
+                }
+			}
+				.image3{
+					height: 500px;
+					width: 900px;
+					overflow: hidden;
+					@include mob2{
+						width: 300px;
+						height: 200px;
+					}
+					img{
+						width: 100%;
+						height: 100%;
+	
+						@include mob{
+							
+						}
+					}
+				}
+        }
+    }
+}
+.iconDiv1{
+	display:flex;
+	flex-direction: column;
+	width: 500px;
+	margin-bottom: 90px;
+	@include mob2{
+	width: 300px;
+	}
+
+	.tools{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+         font-weight: bold;
+         font-size: 25px;
+		 margin-bottom: 15px;
+		 
+		 h2{
+			color: darkgray;
+
+		 }
+	}
+}
+.contDiv{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 150px;
+	@include mob2{
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+	.left{
+		flex:5;
+		.imgCont{
+			width: 700px;
+			height: 400px;
+			overflow:hidden;
+			transition: all 2s ease;
+
+			@include mob2{
+				width: 300px;
+				height: 200px;
+
+			}
+			@include rangex{
+				width: 700px;
+				height: 400px;
+			   }
+			img{
+				object-fit: contain;
+				width: 100%;
+				height: 100%;
+				transition: all 2s ease;
+
+			}
+		}
+	}
+	.right{
+		flex:5;
+		.words{
+			margin-left: 50px;
+			color:black;
+			width:400px;
+			padding: 5px;
+			letter-spacing: 2px;
+			line-height: 30px;
+			color:black;
+			@include mob2{
+				width: 300px;
+				margin-left: 10px;
+				margin-top: 20px;
+				line-height: 20px;
+				font-stretch: expanded;
+                 text-align:justify;
+			}
+			@include rangex{
+				width: 500px;
+			   }
+		}
+	}
+}
+
+.contDiv3{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 150px;
+	@include mob2{
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+	.left{
+		flex:5;
+		.imgCont{
+			width: 700px;
+			height: 400px;
+			overflow:hidden;
+			transition: all 2s ease;
+
+			@include mob2{
+				width: 300px;
+				height: 200px;
+			}
+			@include rangex{
+				width: 700px;
+				height: 400px;
+			   }
+			img{
+				object-fit: contain;
+				width: 100%;
+				height: 100%;
+				transition: all 2s ease;
+
+			}
+		}
+	}
+	.right{
+		flex:5;
+		.words{
+			margin-left: 50px;
+			color:black;
+			width:400px;
+			padding: 5px;
+			letter-spacing: 2px;
+			line-height: 30px;
+			color:black;
+			@include mob2{
+				width: 300px;
+				margin-left: 10px;
+				margin-top: 20px;
+				line-height: 20px;
+				font-stretch: expanded;
+                 text-align:justify;
+			}
+			@include rangex{
+				width: 500px;
+			   }
+		}
+	}
+}
+
+
+.box2{
+	margin-top:150px
+}
+
+.box3{
+	margin-top:150px
+}
