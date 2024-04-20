@@ -1,6 +1,6 @@
 import {React} from 'react'
 import './email.scss'
-import {Close} from '@material-ui/icons';
+import { IoMdClose } from "react-icons/io";
 
 export default function Email({menuOpen,setMenuOpen,load,setLoad}) {
 ///^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/
@@ -25,7 +25,7 @@ export default function Email({menuOpen,setMenuOpen,load,setLoad}) {
 
   return (
     <div className={"menu  " +(menuOpen && "active")}>
-        <Close className="close" onClick={()=>setMenuOpen(false)} />
+        <IoMdClose className="close" onClick={()=>setMenuOpen(false)} />
         <div className="container" >
            
            <div className="textDivs">
