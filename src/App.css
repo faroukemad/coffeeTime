@@ -7,11 +7,11 @@ position: relative;
 justify-content: center;
 transition: all 1s ease;
 background-color: burlywood;
-
+align-items: center;
 
 }
 .appSize{
-  height: 700px;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar{
